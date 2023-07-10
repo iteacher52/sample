@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "YUniverse-B";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_yuniverse@1.0/YUniverse-B.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* reset(init) */
+body,p, ul, li {margin: 0; padding: 0; font-family: "YUniverse-B";}
+a, a:link, a:visited, a:hover, a:active, a:focus { color: inherit; text-decoration: none; }
+
+/* custom */
+.quick { position: fixed; right: 0; bottom: 0; margin: 15px; }
+.quick a { display: block; width: 50px; height: 50px; line-height: 50px; text-align: center; background-color: #ffffff; border: 2px solid black; }
+.quick a:first-child{ margin-bottom: 5px; background-color: #333333; color: #fff; border: 2px solid white;}
+
+.con { position: relative;  padding: 0 5vw;} 
+.con1 { background-color: #bdb51d; height: 100vh; padding-top: 10vw;}
+.con2 { padding: 5vw; display: flex; flex-wrap: wrap; justify-content: space-between;}
+.con3 { background-color: #bdb51d; height: 100vh; padding-top: 5vw;}
+.con2 section { width: calc(50% - 5vw); }
+.con2 section:last-child { width: 100%; }
+.con2 section:last-child { display: flex; justify-content: space-between; }
+.con2 section:last-child > div { width: calc(50% - 5vw); height: 250px; padding: 5vw 0; overflow: hidden; }
+.con2 section:last-child > div img { width: 100%; }
+
+.main_font { font-size: 5vw; }
+.con1 .main_font { color: #ffffff; }
+
+.highlight { position: relative; display: inline-block; z-index: 1; color: #000000}
+.highlight:before { content:""; position: absolute; bottom: 0; left: 0; z-index: -1; display: inline-block; background-color: #fff55faa; height: 25%; width: 0%; transition: 0.5s width; }
+.highlight:hover:before { width: 100%; }
+
+b { position: relative; display: inline-block; z-index: 1; color: #00000055;}
+b:before { content:""; position: absolute; bottom: 0; left: 0; z-index: -1; display: inline-block; background-color: #fff55faa; height: 25%; width: 0%; transition: 0.5s width; }
+b:hover {color: #000000;}
+b:hover:before { width: 100%; }
+
+.gallary { display: flex; align-items: center; flex-wrap: wrap; margin-top: 4rem; justify-content: space-between;}
+.gallary li { width: calc(95% / 2); height: 30vw; max-height: 250px; overflow: hidden; display: flex; align-items: center; transition: 1s all; border-radius: 45vw 25vw;}
+.gallary li:hover { border-radius: 25vw 45vw; }
+.gallary li img { width: 100%; filter: grayscale(100%); transition: 1s all;}
+.gallary li:hover img {filter: grayscale(0%);}
+
+/* do it yourself */
